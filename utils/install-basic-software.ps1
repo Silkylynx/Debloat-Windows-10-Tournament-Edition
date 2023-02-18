@@ -3,7 +3,7 @@
 # install a list of packages. Script will also install Sysinternals Utilities
 # into your default drive's root directory.
 $PSDefaultParameterValues = @{}
-$PSDefaultParameterValues += @{'*:ErrorAction' = 'SilentlyContinue'}
+$PSDefaultParameterValues += @{'*:ErrorAction' = 'SilentlyContinue'} ##Errors that don't interfere with normal operation are common in this script.
 $packages = @(
     "steam.install"
     #"notepadplusplus.install"
