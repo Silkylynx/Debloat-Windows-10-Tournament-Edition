@@ -53,7 +53,7 @@ Unblock PowerShell scripts and modules within this directory:
 
 # Usage
 
-#Right now where it's at is that you should be able to use a fresh or ready PC with all of the scripts, run a few utils (lower-ram-usage.reg, prefetch-prelaunch.ps1, -disable-scheduled-tasks.ps1, and later on when I reconfigure it to download steam automatically, install-basic-software.ps1), then restart, run disable defender again, then reboot. It is a bit cumbersome to reboot a couple times, but some defender removal methods arent as permanent, and I'm gonna work on finding one that only requires one reboot if any.
+#Right now where it's at is that you should be able to use a fresh or ready PC with all of the scripts, run a few utils (lower-ram-usage.reg, prefetch-prelaunch.ps1, -disable-scheduled-tasks.ps1, and later on when I reconfigure it to download steam automatically, install-basic-software.ps1), then restart, run disable defender again, then reboot. It is a bit cumbersome to reboot a couple times, but some defender removal methods arent as permanent, and I'm gonna work on finding one that only requires one reboot if any. https://notepad.link/share/JrR4lCdlO6cYxSzyRCFd These scripts are meant to handle everything described on the Windows end in https://notepad.link/share/JrR4lCdlO6cYxSzyRCFd, however you will need to intall Steam, any necessary utilities, and do the setup for +R 
 
 1. Install all available updates for your system.
 2. Edit the scripts to fit your need.
