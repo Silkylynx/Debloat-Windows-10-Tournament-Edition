@@ -141,11 +141,12 @@ send me a pull request.
 - [maci0](https://github.com/maci0)
 - [narutards](https://github.com/narutards)
 - [tumpio](https://github.com/tumpio)
-#Andy McRae @ Stackoverflow
+- 
+-#Andy McRae @ Stackoverflow
 
-#Jelphy @ Stackoverflow
+-#Jelphy @ Stackoverflow
 
-#Shawn Brink @ tenforums
+-#Shawn Brink @ tenforums
 
 
 ## License
