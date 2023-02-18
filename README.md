@@ -9,7 +9,7 @@ Do not expect this project to transition to Windows 11 as the maintainer lacks t
 This project collects PowerShell scripts which help to *debloat* Windows 10,
 tweak common settings and install basic software components.
 
-#This branch of the fork not onlyincludes additional settings for Windows to speed up setup on a fresh machine, as well as (coming soon) automate settings changes to +R and Steam. But is also what I use personally.
+#This branch of the fork not onlyincludes additional settings for Windows to speed up setup on a fresh machine, as well as (coming soon) automate settings changes to +R and Steam. But is also what I use personally. Fix privacy settings is fully deleted, use W10Privacy or O&O10 with tinywall.
 
 I test these scripts on a Windows 10 Professional 64-Bit (English) virtual
 machine. Please let me know if you encounter any issues. Home Edition and
