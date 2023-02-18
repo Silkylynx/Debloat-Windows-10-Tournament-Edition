@@ -142,8 +142,11 @@ send me a pull request.
 - [narutards](https://github.com/narutards)
 - [tumpio](https://github.com/tumpio)
 #Andy McRae @ Stackoverflow
+
 #Jelphy @ Stackoverflow
+
 #Shawn Brink @ tenforums
+
 
 ## License
 
