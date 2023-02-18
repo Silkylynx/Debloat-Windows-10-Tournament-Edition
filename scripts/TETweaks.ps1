@@ -20,6 +20,6 @@
 	powercfg -change -monitor-timeout-dc 0
 	powercfg -change -standby-timeout-dc 0
 	powercfg -change -hibernate-timeout-dc 0
-	#neversleepbatteryjustincase
+	
        #changes monitor timeout to never
 
