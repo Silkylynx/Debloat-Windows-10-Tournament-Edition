@@ -6,3 +6,4 @@
 [] Fix credits
 [] Add post +R installation script
 [] Make personal use fork to my liking and then reinstall Windows to test before pushing
+[] add "-ErrorAction SilentlyContinue" to any block that will be performing an action for stability
