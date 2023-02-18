@@ -155,9 +155,9 @@ $domains = @(
     "e3843.g.akamaiedge.net"
     "flightingserviceweurope.cloudapp.net"
     #"sls.update.microsoft.com"                 # may cause issues with Windows Updates
-    "static.ads-twitter.com"                    # may cause issues with Twitter login
+    #"static.ads-twitter.com"                    # may cause issues with Twitter login
     "www-google-analytics.l.google.com"
-    "p.static.ads-twitter.com"                  # may cause issues with Twitter login
+    #"p.static.ads-twitter.com"                  # may cause issues with Twitter login
     "hubspot.net.edge.net"
     "e9483.a.akamaiedge.net"
 
@@ -215,7 +215,7 @@ $ips = @(
     "204.79.197.200"
     "23.218.212.69"
     "65.39.117.230"
-    "65.52.108.33"   # Causes problems with Microsoft Store
+    #"65.52.108.33"   # Causes problems with Microsoft Store
     "65.55.108.23"
     "64.4.54.254"
 
