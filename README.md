@@ -64,7 +64,7 @@ Unblock PowerShell scripts and modules within this directory:
 4. `PS > Restart-Computer`
 5. Run `disable-windows-defender.ps1` one more time if you ran it in step 3
 6. `PS > Restart-Computer`
-
+#Utils used in my Windows install are dark-theme.reg, disable-edge-prelaunch.reg, disable-memory-compression, enable-god-mode, ,lower-ram-usage, ssd-tune, &install-basic-software(this is where the meat of the edits went to, I would highly recommend editing the $packages section with applications found at https://community.chocolatey.org/)
 ## Start menu
 
 In the past I included small fixes to make the start menu more usable, like
