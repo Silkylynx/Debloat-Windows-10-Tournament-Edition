@@ -3,30 +3,58 @@
 # install a list of packages. Script will also install Sysinternals Utilities
 # into your default drive's root directory.
 
-$packages = @(
-    steam.install
-    #"notepadplusplus.install"
+$packages = @(  
+    "tinywall"
+    "w10privacy"
+    "parsec"
+    "ublockorigin-chrome"
+    "shutup10"
+    "powerGUI"
+    "shotcut"
+    "discord"
+    "obs-studio.install"
+    "cpu-z.install"
+    "rufus"
+    "greenshot"
+    "psping"
+    "calibre"
+    "crystaldiskinfo"
+    "autohotkey.install"
+    "irfranview"
+    "everything"
+    "powertoys"
+    "libreoffice-fresh"
+    "nvidia-display-driver"
+    "k-litecodecpackfull"
+    "winlogbeat" #network analyzer
+    "putty.install" #SSH client
+    "foxitreader" #Free PDF reader
+    "dotnetfx"
+    "chocolatey-core.extension" #unsure if this does anything
+    "steam.install"
+    "notepadplusplus.install"
     #"peazip.install"
-    #"7zip.install"
+    "7zip.install"
     #"aimp"
     #"audacity"
     #"autoit"
-    #"classic-shell"
-    #"filezilla"
-    #"firefox"
+    "classic-shell"
+    "filezilla"
+    "firefoxsr"
     #"gimp"
-    #"google-chrome-x64"
+    "muilvad-app" #good VPN
+    "google-chrome-x64"
     #"imgburn"
     #"keepass.install"
-    #"paint.net"
+    "paint.net"
     #"putty"
-    #"python"
-    #"qbittorrent"
+    "python"
+    "qbittorrent"
     #"speedcrunch"
     #"sysinternals"
     #"thunderbird"
     #"vlc"
-    #"windirstat"
+    "windirstat"
     #"wireshark"
 )
 
@@ -44,7 +72,7 @@ echo "Creating daily task to automatically upgrade Chocolatey packages"
 $ScheduledJob = @{
     Name = "Chocolatey Daily Upgrade"
     ScriptBlock = {choco upgrade all -y}
-    Trigger = New-JobTrigger -Daily -at 2am
+    Trigger = New-JobTrigger -Daily -at 7am
     ScheduledJobOption = New-ScheduledJobOption -RunElevated -MultipleInstancePolicy StopExisting -RequireNetwork
 }
 Register-ScheduledJob @ScheduledJob
