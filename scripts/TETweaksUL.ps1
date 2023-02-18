@@ -17,8 +17,8 @@
        powercfg -change -standby-timeout-ac 0
        powercfg -change -hibernate-timeout-ac 0
        #neversleep thanks to Jelphy @ stackoverflow
-       powercfg -change -monitor-timeout-dc 0
-       powercfg -change -standby-timeout-dc 0
-       powercfg -change -hibernate-timeout-dc 0
-       #changes monitor timeout to never
+       powercfg -change -monitor-timeout-dc 300
+       powercfg -change -standby-timeout-dc 600
+       powercfg -change -hibernate-timeout-dc 900
+       #changes monitor timeout to never on AC power
 
