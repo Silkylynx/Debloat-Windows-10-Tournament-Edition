@@ -64,7 +64,8 @@ Unblock PowerShell scripts and modules within this directory:
 4. `PS > Restart-Computer`
 5. Run `disable-windows-defender.ps1` one more time if you ran it in step 3
 6. `PS > Restart-Computer`
-
+# After this, you will want to grab Steam, +R, and set up according to ttps://notepad.link/share/JrR4lCdlO6cYxSzyRCFd
+Optionally, you can run lower-ram-usage, disable-prefetch-prelaunch, and disable-edge-prelaunch
 ## Start menu
 
 In the past I included small fixes to make the start menu more usable, like
