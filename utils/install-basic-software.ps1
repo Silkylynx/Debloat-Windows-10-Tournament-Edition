@@ -4,8 +4,9 @@
 # into your default drive's root directory.
 
 $packages = @(
-    "notepadplusplus.install"
-    "peazip.install"
+    steam.install
+    #"notepadplusplus.install"
+    #"peazip.install"
     #"7zip.install"
     #"aimp"
     #"audacity"
