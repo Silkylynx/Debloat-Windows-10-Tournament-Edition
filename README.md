@@ -1,9 +1,5 @@
-# Debloat Windows 10
-
-**ATTENTION!**
-Apparently there is an issue where running the scripts results in a broken user account / system.
-So far, there is only little information what actually causes this.
-See the [corresponding issue](https://github.com/W4RH4WK/Debloat-Windows-10/issues/306).
+# Debloat Windows 10 Tournament Edition
+#Notes from Silky preceded by #
 
 **Note about Windows 11:**
 This project does not directly support Windows 11.
@@ -12,6 +8,8 @@ Do not expect this project to transition to Windows 11 as the maintainer lacks t
 
 This project collects PowerShell scripts which help to *debloat* Windows 10,
 tweak common settings and install basic software components.
+
+#This fork includes additional settings for Windows to speed up setup on a fresh machine, as well as (coming soon) automate settings changes to +R and Steam.
 
 I test these scripts on a Windows 10 Professional 64-Bit (English) virtual
 machine. Please let me know if you encounter any issues. Home Edition and
@@ -23,6 +21,7 @@ them out there.
 
 Also, note that gaming-related apps and services will be removed/disabled. If
 you intend to use your system for gaming, adjust the scripts accordingly.
+#I am unaware of any fighting games requiring a Microsoft sign-in through Steam versions. #wip comment xbox svc
 
 **There is no undo**, I recommend only using these scripts on a fresh
 installation (including Windows Updates). Test everything after running them
@@ -33,12 +32,7 @@ work after future updates since I cannot predict what Microsoft will do next.
 
 - [Fork with German version](https://github.com/MagicLike/Debloat-Windows-10/blob/master/README.de-de.md)
 
-## Interactivity
 
-The scripts are designed to run without any user interaction. Modify them
-beforehand. If you want a more interactive approach check out
-[DisableWinTracking](https://github.com/10se1ucgo/DisableWinTracking) from
-[10se1ucgo](https://github.com/10se1ucgo).
 
 ## Download Latest Version
 
