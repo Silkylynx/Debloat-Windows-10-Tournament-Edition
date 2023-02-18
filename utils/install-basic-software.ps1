@@ -2,9 +2,10 @@
 # This script will use Windows package manager to bootstrap Chocolatey and
 # install a list of packages. Script will also install Sysinternals Utilities
 # into your default drive's root directory.
-
+$PSDefaultParameterValues = @{}
+$PSDefaultParameterValues += @{'*:ErrorAction' = 'SilentlyContinue'}
 $packages = @(
-    steam.install
+    "steam.install"
     #"notepadplusplus.install"
     #"peazip.install"
     #"7zip.install"
