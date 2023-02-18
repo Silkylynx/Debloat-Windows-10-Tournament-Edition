@@ -51,15 +51,16 @@ Unblock PowerShell scripts and modules within this directory:
 
     PS> ls -Recurse *.ps*1 | Unblock-File
 
-## Usage
+# Usage
 
-Scripts can be run individually, pick what you need.
+#Right now where it's at is that you should be able to use a fresh or ready PC with all of the scripts, run a few utils (lower-ram-usage.reg, prefetch-prelaunch.ps1, -disable-scheduled-tasks.ps1, and later on when I reconfigure it to download steam automatically, install-basic-software.ps1), then restart, run disable defender again, then reboot. It is a bit cumbersome to reboot a couple times, but some defender removal methods arent as permanent, and I'm gonna work on finding one that only requires one reboot if any.
 
 1. Install all available updates for your system.
 2. Edit the scripts to fit your need.
 3. Run the scripts you want to apply from a PowerShell with administrator privileges (Explorer
    `Files > Open Windows PowerShell > Open Windows PowerShell as
    administrator`)
+   #3.5. Run lower-ram-usage.reg, disable-prefetch-prelaunch.ps1, disable-scheduled-tasks.ps1
 4. `PS > Restart-Computer`
 5. Run `disable-windows-defender.ps1` one more time if you ran it in step 3
 6. `PS > Restart-Computer`
@@ -106,7 +107,9 @@ step will hang unless `dmwappushservice` is active.
 Apparently running the stock `remove-default-apps` script will cause Xbox
 Wireless Adapters to stop functioning. I suspect one should not remove the Xbox
 App when wanting to use one. But I haven't confirmed this yet, and there is a
-workaround to re-enable it afterwards. See
+workaround to re-enable it afterwards.
+#Re-enable Xbox services by pressing Win+R, going to services.msc, and re-enabling Xbox stuff.
+See
 [#78](https://github.com/W4RH4WK/Debloat-Windows-10/issues/78).
 
 ### Issues with Skype
@@ -138,6 +141,9 @@ send me a pull request.
 - [maci0](https://github.com/maci0)
 - [narutards](https://github.com/narutards)
 - [tumpio](https://github.com/tumpio)
+#Andy McRae @ Stackoverflow
+#Jelphy @ Stackoverflow
+#Shawn Brink @ tenforums
 
 ## License
 
