@@ -7,6 +7,10 @@
 # commented by default. The domains known to cause issues marked accordingly.
 # Please see the related issue:
 # <https://github.com/W4RH4WK/Debloat-Windows-10/issues/79>
+<# 
+UL CHANGELIST
+Akamai domains unblocked so as to avoid issues with DRM on websites like Netflix and Spotify
+#>
 
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\New-FolderForced.psm1
 
@@ -20,7 +24,7 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection
 Write-Output "Adding telemetry domains to hosts file"
 $hosts_file = "$env:systemroot\System32\drivers\etc\hosts"
 $domains = @(
-    "184-86-53-99.deploy.static.akamaitechnologies.com"
+    #"184-86-53-99.deploy.static.akamaitechnologies.com"
     "a-0001.a-msedge.net"
     "a-0002.a-msedge.net"
     "a-0003.a-msedge.net"
@@ -30,11 +34,11 @@ $domains = @(
     "a-0007.a-msedge.net"
     "a-0008.a-msedge.net"
     "a-0009.a-msedge.net"
-    "a1621.g.akamai.net"
+    <#"a1621.g.akamai.net"
     "a1856.g2.akamai.net"
     "a1961.g.akamai.net"
-    #"a248.e.akamai.net"            # makes iTunes download button disappear (#43)
-    "a978.i6g1.akamai.net"
+    "a248.e.akamai.net"            # makes iTunes download button disappear (#43)
+    "a978.i6g1.akamai.net"#>
     "a.ads1.msn.com"
     "a.ads2.msads.net"
     "a.ads2.msn.com"
@@ -69,10 +73,10 @@ $domains = @(
     "db3aqu.atdmt.com"
     "df.telemetry.microsoft.com"
     "diagnostics.support.microsoft.com"
-    "e2835.dspb.akamaiedge.net"
+    <#"e2835.dspb.akamaiedge.net"
     "e7341.g.akamaiedge.net"
     "e7502.ce.akamaiedge.net"
-    "e8218.ce.akamaiedge.net"
+    "e8218.ce.akamaiedge.net"#>
     "ec.atdmt.com"
     "fe2.update.microsoft.com.akadns.net"
     "feedback.microsoft-hohm.com"
@@ -149,17 +153,17 @@ $domains = @(
     "settings-ssl.xboxlive.com"
     "settings-ssl.xboxlive.com-c.edgekey.net"
     "settings-ssl.xboxlive.com-c.edgekey.net.globalredir.akadns.net"
-    "e87.dspb.akamaidege.net"
+    #"e87.dspb.akamaidege.net"
     "insiderservice.microsoft.com"
     "insiderservice.trafficmanager.net"
-    "e3843.g.akamaiedge.net"
+    #"e3843.g.akamaiedge.net"
     "flightingserviceweurope.cloudapp.net"
     #"sls.update.microsoft.com"                 # may cause issues with Windows Updates
-    #"static.ads-twitter.com"                    # may cause issues with Twitter login
+    "static.ads-twitter.com"                    # may cause issues with Twitter login
     "www-google-analytics.l.google.com"
-    #"p.static.ads-twitter.com"                  # may cause issues with Twitter login
+    "p.static.ads-twitter.com"                  # may cause issues with Twitter login
     "hubspot.net.edge.net"
-    "e9483.a.akamaiedge.net"
+    #"e9483.a.akamaiedge.net"
 
     #"www.google-analytics.com"
     #"padgead2.googlesyndication.com"
@@ -215,7 +219,7 @@ $ips = @(
     "204.79.197.200"
     "23.218.212.69"
     "65.39.117.230"
-    #"65.52.108.33"   # Causes problems with Microsoft Store
+    "65.52.108.33"   # Causes problems with Microsoft Store
     "65.55.108.23"
     "64.4.54.254"
 
