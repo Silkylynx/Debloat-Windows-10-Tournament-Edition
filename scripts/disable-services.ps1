@@ -1,6 +1,11 @@
 #   Description:
 # This script disables unwanted Windows services. If you do not want to disable
 # certain services comment out the corresponding lines below.
+<#
+UL CHANGELIST
+Xbox apps left on
+ICS enabled for hotspot tethering
+#>
 
 $services = @(
     "diagnosticshub.standardcollector.service" # Microsoft (R) Diagnostics Hub Standard Collector Service
@@ -11,16 +16,16 @@ $services = @(
     "NetTcpPortSharing"                        # Net.Tcp Port Sharing Service
     "RemoteAccess"                             # Routing and Remote Access
     "RemoteRegistry"                           # Remote Registry
-    "SharedAccess"                             # Internet Connection Sharing (ICS)
+    #"SharedAccess"                             # Internet Connection Sharing (ICS), enabled for hotspot tethering
     "TrkWks"                                   # Distributed Link Tracking Client
     "WbioSrvc"                                 # Windows Biometric Service (required for Fingerprint reader / facial detection)
     #"WlanSvc"                                 # WLAN AutoConfig (Disabling this can cause issues with wifi connectivity)
     "WMPNetworkSvc"                            # Windows Media Player Network Sharing Service
     #"wscsvc"                                  # Windows Security Center Service
     #"WSearch"                                 # Windows Search
-    "XblAuthManager"                           # Xbox Live Auth Manager
+    <#"XblAuthManager"                           # Xbox Live Auth Manager
     "XblGameSave"                              # Xbox Live Game Save Service
-    "XboxNetApiSvc"                            # Xbox Live Networking Service
+    "XboxNetApiSvc"#>                          # Xbox Live Networking Service, i want to play halo and state of decay 2 eventually
     "ndu"                                      # Windows Network Data Usage Monitor
     # Services which cannot be disabled
     #"WdNisSvc"
