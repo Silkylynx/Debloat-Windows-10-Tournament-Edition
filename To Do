@@ -5,7 +5,8 @@
 [] Trim readme for redundant information
 [] Fix credits
 [] Add post +R installation script
-[] Make personal use fork to my liking and then reinstall Windows to test before pushing
+[x] Make personal use fork to my liking and then reinstall Windows to test before pushing
+#Chocolatey install was messy, will work on install-basic-software when I get around to VM tomfoolery
 [] add "-ErrorAction SilentlyContinue" to scripts that spit errors and test to see which ones break without. 
 [] Split install-basic-software.ps1 script into Chocolatey setup, Chocolatey upgrade schedule, sysinternals install(prolly just get rid of it tbh? prolly good for troubleshooting tho), choco package install
 []https://github.com/mvallim/live-custom-ubuntu-from-scratch make the ubuntu liveboot. +R is platinum on steam proton and most fighting games actually work on linux lol
