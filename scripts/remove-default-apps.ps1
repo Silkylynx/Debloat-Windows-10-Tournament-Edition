@@ -1,6 +1,15 @@
 #   Description:
 # This script removes unwanted Apps that come with Windows. If you  do not want
 # to remove certain Apps comment out the corresponding lines below.
+<# 
+UL BRANCH CHANGELIST
+NetworkSpeedTest
+Cortana
+All Xbox apps
+Left in for convenience reasons.
+#>
+#As this spits out a lot of red that probably need not be of concern, the following line is set to silently continue after errors
+$ErrorActionPreference = "SilentlyContinue"
 
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\take-own.psm1
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\New-FolderForced.psm1
@@ -11,7 +20,7 @@ do {} until (Elevate-Privileges SeTakeOwnershipPrivilege)
 Write-Output "Uninstalling default apps"
 $apps = @(
     # default Windows 10 apps
-    "Microsoft.549981C3F5F10" #Cortana
+    #"Microsoft.549981C3F5F10" #Cortana, disabled as Telemetry is disabled and doubled up on through tinywall/win10privacy
     "Microsoft.3DBuilder"
     "Microsoft.Appconnector"
     "Microsoft.BingFinance"
@@ -19,14 +28,14 @@ $apps = @(
     "Microsoft.BingSports"
     "Microsoft.BingTranslator"
     "Microsoft.BingWeather"
-    #"Microsoft.FreshPaint"
-    #"Microsoft.GamingServices"
+    #"Microsoft.FreshPaint" #lmao this isnt even on my windows install
+    "Microsoft.GamingServices"
     "Microsoft.MicrosoftOfficeHub"
     "Microsoft.MicrosoftPowerBIForWindows"
     "Microsoft.MicrosoftSolitaireCollection"
     #"Microsoft.MicrosoftStickyNotes"
     "Microsoft.MinecraftUWP"
-    "Microsoft.NetworkSpeedTest"
+    #"Microsoft.NetworkSpeedTest" idk its not hurting me 
     "Microsoft.Office.OneNote"
     "Microsoft.People"
     "Microsoft.Print3D"
@@ -35,23 +44,23 @@ $apps = @(
     #"Microsoft.Windows.Photos"
     "Microsoft.WindowsAlarms"
     #"Microsoft.WindowsCalculator"
-    #"Microsoft.WindowsCamera"
-    #"microsoft.windowscommunicationsapps"
+    "Microsoft.WindowsCamera" #Cheese in install-default-apps script
+    "microsoft.windowscommunicationsapps"
     "Microsoft.WindowsMaps"
     "Microsoft.WindowsPhone"
-    #"Microsoft.WindowsSoundRecorder"
-    #"Microsoft.WindowsStore"   # can't be re-installed
-    #"Microsoft.Xbox.TCUI"
-    #"Microsoft.XboxApp"
-   # "Microsoft.XboxGameOverlay"
-    #"Microsoft.XboxSpeechToTextOverlay"
+    #"Microsoft.WindowsSoundRecorder" just in case
+    <#"Microsoft.WindowsStore"   # can't be re-installed
+    "Microsoft.Xbox.TCUI"
+    "Microsoft.XboxApp"
+    "Microsoft.XboxGameOverlay"
+    "Microsoft.XboxSpeechToTextOverlay"#>
     "Microsoft.YourPhone"
     "Microsoft.ZuneMusic"
     "Microsoft.ZuneVideo"
 
     # Threshold 2 apps
-    #"Microsoft.CommsPhone"
-    # "Microsoft.ConnectivityStore"
+    "Microsoft.CommsPhone"
+    "Microsoft.ConnectivityStore"
     "Microsoft.GetHelp"
     "Microsoft.Getstarted"
     "Microsoft.Messaging"
@@ -72,7 +81,7 @@ $apps = @(
     # Redstone 5 apps
     "Microsoft.MixedReality.Portal"
     "Microsoft.ScreenSketch"
-    #"Microsoft.XboxGamingOverlay"
+    #"Microsoft.XboxGamingOverlay" - i kinda wanna get rid of this but i dont know if itll break
 
     # non-Microsoft
     "2FE3CB00.PicsArt-PhotoStudio"
@@ -86,7 +95,7 @@ $apps = @(
     "A278AB0D.DisneyMagicKingdoms"
     "A278AB0D.MarchofEmpires"
     "ActiproSoftwareLLC.562882FEEB491" # next one is for the Code Writer from Actipro Software LLC
-    #"CAF9E577.Plex"  
+    "CAF9E577.Plex"  
     "ClearChannelRadioDigital.iHeartRadio"
     "D52A8D61.FarmVille2CountryEscape"
     "D5EA27B7.Duolingo-LearnLanguagesforFree"
@@ -105,7 +114,7 @@ $apps = @(
     "ShazamEntertainmentLtd.Shazam"
     "SlingTVLLC.SlingTV"
     "SpotifyAB.SpotifyMusic"
-    #"TheNewYorkTimes.NYTCrossword"
+    "TheNewYorkTimes.NYTCrossword"
     "ThumbmunkeysLtd.PhototasticCollage"
     "TuneIn.TuneInRadio"
     "WinZipComputing.WinZipUniversal"
